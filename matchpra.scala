@@ -1,6 +1,6 @@
 class MatchNum(val num: Int)
 
-class MatchList(val lst: List[String])
+class MatchList(val lst: List[Any])
 
 object MatchSome {
     def printNum(matchnum : MatchNum) = matchnum.num match {
@@ -14,5 +14,12 @@ object MatchSome {
         println("b = " + b + " c = " + c + " d = " + d+ " e = " + e)
       case _ =>
         println("Head is not A")
+    }
+
+    def printMatchListAs(mlst : MatchList) = mlst.lst match {
+      case List(a@List("A"), x) =>
+        println(a)
+        println(x)
+      case _ => println("Head List is not List('A')")
     }
 }
