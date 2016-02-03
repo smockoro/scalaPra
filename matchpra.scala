@@ -22,6 +22,7 @@ object MatchSome {
         println(a)
         println(x)
       case _ => println("Head List is not List('A')")
+    }
 
     def printMatchType(obj: Any) = obj match{
       case v:java.lang.Integer => println("Integer")
