@@ -28,3 +28,5 @@ def around(init: () => Unit, body: () => Any, fin: () => Unit): Any = {
 
 // 処理を値として利用する（関数を値として利用する）ことで，表現の自由度，部品化の仕方の自由度が高くなる．
 
+class sample
+
